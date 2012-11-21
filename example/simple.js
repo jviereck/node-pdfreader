@@ -11,9 +11,9 @@ var pdf = new PDFReader(__dirname + '/trace.pdf');
 pdf.on('error', errorDumper);
 pdf.on('ready', function(pdf) {
   // Render a single page.
-  pdf.render({
+  pdf.render(1 /* First page */, {
     output: __dirname + '/page-single.png'
-  }, 1 /* Render first page */, errorDumper);
+  }, errorDumper);
 
   // Render all pages.
   pdf.renderAll({
