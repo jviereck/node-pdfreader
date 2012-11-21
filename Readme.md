@@ -23,7 +23,7 @@ Right now you can:
 See the example directory. You can run the example from the root directory using
 
 ```bash
-node example/simple.js
+$ node example/simple.js
 ```
 
 The code of the `simple.js` file looks like this:
