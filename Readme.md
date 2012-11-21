@@ -68,7 +68,7 @@ You need to have a version of cairo with freetype2 font support. Best is to firs
 
 ## Is there windows support?
 
-No. I just haven't tested the special node-canvas build on windows, so I've disabled windows support.
+Not for rendering. I just haven't tested the special node-canvas build on windows, so I've disabled windows support.
 
 ## Can you please implement X?
 
