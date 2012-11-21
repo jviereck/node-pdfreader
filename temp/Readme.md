@@ -1,0 +1,1 @@
+This directory is for temporary font files created while rendering.

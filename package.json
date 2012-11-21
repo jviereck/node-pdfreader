@@ -1,0 +1,13 @@
+{
+  "name": "node-pdfreader",
+  "description":  "Node wrapper around PDF.JS library",
+  "version":  "0.0.1",
+  "author": "Julian Viereck <julian.viereck@gmail.com>",
+  "keywords": ["canvas", "graphic", "graphics", "pdf"],
+  "homepage": "https://github.com/jviereck/node-pdf.js",
+  "repository": "git://github.com/jviereck/node-pdf.js",
+  "dependencies": {
+     "node-canvas": "git://github.com/jviereck/node-canvas.git#348b7f15104372fef6cb7bede6c483cc9428434d"
+ },
+ "engines": { "node": ">= 0.8.0" }
+}
