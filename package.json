@@ -10,7 +10,7 @@
     "url": "git://github.com/jviereck/node-pdfreader"
   },
   "dependencies": {
-     "node-canvas": "git://github.com/jviereck/node-canvas.git#0fea850ff716429545926e042f16b62f27388c67"
+     "node-canvas": "git://github.com/jviereck/node-canvas.git#973fff41858bea6d3e64362587a8986a3099364a"
   },
   "engines": {
   	"node": ">= 0.8.0"
