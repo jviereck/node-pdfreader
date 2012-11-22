@@ -22,7 +22,7 @@ pdf.on('ready', function(pdf) {
     }
   }, errorDumper);
 
-  // Get the text content of a single page.
+  // Get the text content of single pages (similar to pdf2txt).
   pdf.getContent(1 /* First page */, function(err, content) {
     console.log(content);
   }, errorDumper);

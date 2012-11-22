@@ -10,6 +10,7 @@ This is super experimental. It's more a proof of concept. Some terrible things:
 * hacked up code
 * sync file operations to first store font files on disk and later read them again (yeah, it's really that awful)
 * use special version of node-canvas to load fonts (not really tested)
+* no windows support (due to lack of freetype support)
 
 # Overview
 
@@ -17,6 +18,25 @@ Right now you can:
 
 * Render single or all pages to PNG files
 * Get the text content of single pages
+
+# Installation
+
+You need to have node and build tools installed.
+
+If you haven't installed the cairo library with freetype support, you can install it by running this script (make sure to cha)
+
+```bash
+$ cd <download-folder or something where you can put some temporary files>
+$ bash <(curl -fsSk https://raw.github.com/jviereck/node-canvas/font/install)
+```
+
+Once that is done, install the dependencies:
+
+```bash
+$ npm install
+```
+
+This will fetch node-canvas and build it.
 
 # Usage
 
@@ -53,7 +73,7 @@ pdf.on('ready', function(pdf) {
     }
   }, errorDumper);
 
-  // Get the text content of a single page.
+  // Get the text content of single pages (similar to pdf2txt).
   pdf.getContent(1 /* First page */, function(err, content) {
     console.log(content);
   }, errorDumper);
@@ -73,3 +93,7 @@ Not for rendering. I just haven't tested the special node-canvas build on window
 ## Can you please implement X?
 
 No. I don't want to invest too much time in this project. It's a proof of concept for me. However, I'm happy to help others to implement missing features and accept PR :)
+
+## Is that necessary to compile cairo/freetype/node-canvas just to extract text?
+
+No. This was just the easiest way for me to get something out the door.
