@@ -23,10 +23,10 @@ Right now you can:
 
 You need to have node and build tools installed.
 
-If you haven't installed the cairo library with freetype support, you can install it by running this script (make sure to cha)
+If you haven't installed the cairo library with freetype support, you can install it by running this script (make sure to change into a directory, where you can store some temporary files created during the build process of the libraries).
 
 ```bash
-$ cd <download-folder or something where you can put some temporary files>
+$ cd <download-folder or somewhere you can put some temporary build-files>
 $ bash <(curl -fsSk https://raw.github.com/jviereck/node-canvas/font/install)
 ```
 
