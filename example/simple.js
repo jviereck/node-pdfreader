@@ -12,6 +12,7 @@ pdf.on('error', errorDumper);
 pdf.on('ready', function(pdf) {
   // Render a single page.
   pdf.render(1 /* First page */, {
+    bg: true,  /* Enable white background */
     output: __dirname + '/page-single.png'
   }, errorDumper);
 

@@ -23,7 +23,7 @@ Right now you can:
 
 You need to have node and build tools installed.
 
-If you haven't installed the cairo library with freetype support, you can install it by running this script (make sure to change into a directory, where you can store some temporary files created during the build process of the libraries).
+If you haven't installed the cairo library or installed it but without with freetype support, you can install it by running this script (make sure to change into a directory, where you can store some temporary files created during the build process of the libraries):
 
 ```bash
 $ cd <download-folder or somewhere you can put some temporary build-files>
@@ -46,6 +46,8 @@ See the example directory. You can run the example from the root directory using
 $ node example/simple.js
 ```
 
+This will show the text on the first page of the trace-monkey paper, render the frist page with a white background and all other pages in the PDF. The result is placed in the `example/` directory.
+
 The code of the `simple.js` file looks like this:
 
 ```javascript
@@ -63,6 +65,7 @@ pdf.on('error', errorDumper);
 pdf.on('ready', function(pdf) {
   // Render a single page.
   pdf.render(1 /* First page */, {
+    bg: true,  /* Enable white background */
     output: __dirname + '/page-single.png'
   }, errorDumper);
 
