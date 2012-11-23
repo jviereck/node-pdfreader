@@ -46,7 +46,7 @@ See the example directory. You can run the example from the root directory using
 $ node example/simple.js
 ```
 
-This will show the text on the first page of the trace-monkey paper, render the frist page with a white background and all other pages in the PDF. The result is placed in the `example/` directory.
+This loads the trace-monkey PDF, extracts the text of the first page and dumps it to the console, renders the first page using a white background and all the other pages without a background. The resuling PNG files are stored in the `example/` directory.
 
 The code of the `simple.js` file looks like this:
 
