@@ -9,8 +9,7 @@ This is super experimental. It's more a proof of concept. Some terrible things:
 * no test coverage
 * hacked up code
 * sync file operations to first store font files on disk and later read them again (yeah, it's really that awful)
-* use special version of node-canvas to load fonts (not really tested)
-* no windows support (due to lack of freetype support)
+* no windows support (due to lack of freetype support in node-canvas)
 
 # Overview
 
